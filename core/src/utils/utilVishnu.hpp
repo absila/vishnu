@@ -340,5 +340,15 @@ exitProcessOnError(int code);
  */
 void
 exitProcessOnChildError(pid_t child);
+
+/**
+ * @brief Execute a system command and return whether it succeeded or not
+ * @param command The command
+ * @param msg The standard output/error message
+ * @return A string
+ */
+bool
+execSystemCommand(const std::string& command, std::string msg);
+
 } //END NAMESPACE
 #endif // _UTILVISHNU_H_
